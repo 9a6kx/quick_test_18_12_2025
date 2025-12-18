@@ -99,12 +99,11 @@ const unsigned int rs485_TX = 18;
 /* COMMUNICATION VARIABLE DEFINITIONS */
 
 /* I2C konverter za K-tip termopara*/
-#define MCP9600_I2C_ADDRESS 0x67 // ADDR Spojen na masu preko 43 kohm otpornika -> adresa 0x67
+#define MCP9600_I2C_ADDRESS 0x66 // ADDR Spojen na masu preko 13 kohm otpornika -> adresa 0x64
 // u stvarnosti 0x64 jer sam zalemio 13kohm otpornik
 
 /* I2C adresa LCD */
-#define LCD_I2C_ADDRESS 0x27 // standardna adresa za I2C LCD
-// u stvarnosti 0x3F za poljski LCD
+#define LCD_I2C_ADDRESS 0x3F
 
 /* MODBUS RS485 */
 #define MODBUS_SLAVE_ADDR 1 // Adresa frekventnog regulatora
